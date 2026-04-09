@@ -21,7 +21,7 @@ In this study, a scRNA-seq dataset from Kazer et al. (2025) of murine nasal muco
 
 ### Methods
 
-#### Data Acquisition and Preprocessing
+#### Data Acquisition and Quality Control
 Single-cell RNA sequencing data were obtained from Kazer et al. (2025) as a pre-processed Seurat object (`readRDS`) containing gene expression counts and associated metadata. The dataset included cells from murine nasal tissues collected across multiple time points following influenza A virus infection.
 <br><br>
 Quality control was performed to remove low-quality cells based on visualization of gene count, UMI count, and mitochondrial gene expression distributions using violin plots (`VlnPlot`). The percentage of mitochondrial gene expression was calculated using genes with the prefix “mt-” (`PercentageFeatureSet`), and cells with greater than 10% mitochondrial content (`percent.mt < 10`) were removed. Cells with fewer than 500 detected genes (`nFeature_RNA > 500`) were excluded to remove low-quality cells or empty droplets. 
