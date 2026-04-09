@@ -37,7 +37,7 @@ Principal component analysis (PCA) was performed to reduce dimensionality and hi
 Graph-based clustering was performed using the Seurat `FindNeighbors` and `FindClusters` functions based on the selected principal components. Multiple clustering resolutions were evaluated, and a resolution of 0.5 was selected as it produced well-separated clusters without the over-fragmentation observed at higher resolutions (e.g., 0.8). Uniform Manifold Approximation and Projection (UMAP) was used to efficiently visualize high-dimensional single-cell data into interpretable clusters.
 
 #### Batch Effect Correction
-Batch effects were assessed by visualizing UMAP grouped by sample metadata, including time points, mouse IDs, and disease condition. Cells from different groups were well mixed within clusters, indicating that clustering was driven by biological variation rather than technical artifacts. Therefore, no batch correction was applied. 
+Potential batch effects were assessed by visualizing UMAPs coloured by sample metadata, including time points, mouse identities, and disease condition.
 
 #### Cell Type Annotation and Visualization
 Cell type annotation was performed using a manual, marker-based approach. Cluster-specific marker genes were identified using Seurat’s `FindAllMarkers` function with a log fold-change threshold of 0.25. For each cluster, the top five marker genes ranked by average log2 fold-change were selected to represent dominant expression signatures.
