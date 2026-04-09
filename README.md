@@ -32,10 +32,20 @@ Gene expression data were normalized using the log-normalization method implemen
 Highly variable genes were identified (`FindVariableFeatures`) using the variance-stabilizing transformation (vst) method, where the top 2000 features were selected to capture genes that drive cell variability and reduce noise. The data were then scaled (`ScaleData`) to equalize gene expression values for downstream analyses.
 
 #### Dimensionality Reduction and Clustering
+Principal component analysis (PCA) was performed to reduce dimensionality and highlight similarity patterns in the data. An elbow plot was generated to determine the number of principal components used for downstream analysis, with the first 15 components selected as they captured the majority of variance prior to plateauing.
+<br><br>
+Graph-based clustering was performed using the Seurat `FindNeighbors` and `FindClusters` functions based on the selected principal components. Multiple clustering resolutions were evaluated, and a resolution of 0.5 was selected as it produced well-separated clusters without the over-fragmentation observed at higher resolutions (e.g., 0.8). Uniform Manifold Approximation and Projection (UMAP) was used to efficiently visualize high-dimensional single-cell data into interpretable clusters.
 
 #### Batch Effect Correction
+Batch effects were assessed by visualizing UMAP grouped by sample metadata, including time points, mouse IDs, and disease condition. Cells from different groups were well mixed within clusters, indicating that clustering was driven by biological variation rather than technical artifacts. Therefore, no batch correction was applied. 
 
 #### Cell Type Annotation and Visualization
+Cell type annotation was performed using a manual, marker-based approach. Cluster-specific marker genes were identified using Seurat’s `FindAllMarkers` function with a log fold-change threshold of 0.25. For each cluster, the top five marker genes ranked by average log2 fold-change were selected to represent dominant expression signatures.
+<br><br>
+Clusters were classified into cell types according to the known cell type(s) of the dominant marker genes through a literature search with consideration of the biological context of nasal mucosa tissue. In cases where clusters exhibited mixed or ambiguous marker profiles, cell type identities were consolidated based on the predominant expression pattern across multiple markers.
+<br><br>
+Feature plots were generated throughout the annotation process to visualize the spatial distribution and specificity of marker gene expression across clusters, enabling validation of candidate cell type assignments. Representative feature plots were generated for both well-defined clusters and clusters with mixed marker signatures, as well as for key marker genes across major cell types.
+Following annotation, cluster identities were relabeled using Seurat’s RenameIdents function, and annotated cell types were visualized using UMAP with cluster labels displayed.
 
 #### Differential Expression Analysis
 
