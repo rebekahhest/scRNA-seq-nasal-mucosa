@@ -56,6 +56,7 @@ This pseudobulk approach enabled differential expression testing at the level of
 Volcano plots were generated for the time point comparisons relative to day 2 (peak viral infection), excluding Naïve (URT infection) (n=3), and for each tissue type comparison (n=3). 
 
 #### Functional Enrichment Analysis
+Over-representation analysis (ORA) was conducted using the enrichGO function from clusterProfiler (v.4.16.0) using the `org.Mm.eg.db` annotation database. Genes were filtered based on an adjusted p-value < 0.05 and an absolute log2 fold-change > 0.25, consistent with commonly used thresholds in single-cell RNA-seq Seurat workflows to capture biologically meaningful expression changes while filtering out technical noise. Gene Ontology (GO) Biological Process (BP) terms were evaluated using gene symbols as identifiers, with Benjamin-Hochberg multiple testing correction applied. A background universe consisting of a unique list of the tested genes was used to control for selection bias and results were visualized using a dot plot (`dotplot`).
 
 ### Results
 
