@@ -48,6 +48,12 @@ Feature plots were generated throughout the annotation process to visualize the 
 Following annotation, cluster identities were relabeled using Seurat’s RenameIdents function, and annotated cell types were visualized using UMAP with cluster labels displayed.
 
 #### Differential Expression Analysis
+The Seurat object was inspected for NA or missing data and samples missing Mouse identifiers (IDs) were removed to ensure independent biological replicates and to exclude potential doublets or ambiguous cell assignments. 
+<br><br>
+To account for biological replication, gene expression counts were aggregated across cells for each mouse–timepoint combination (n = 10) and mouse–tissue combination (n = 3) using Seurat’s `AggregateExpression()` function. 
+This pseudobulk approach enabled differential expression testing at the level of biological replicates, rather than individual cells. Differential expression analysis was performed using Seurat’s `FindMarkers` function with the `DESeq2` method to account for between-sample variability by modelling counts using a negative binomial distribution and reduce false positives (Love et al., 2014).
+<br><br>
+Volcano plots were generated for the time point comparisons relative to day 2 (peak viral infection), excluding Naïve (URT infection) (n=3), and for each tissue type comparison (n=3). 
 
 #### Functional Enrichment Analysis
 
