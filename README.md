@@ -60,6 +60,11 @@ Over-representation analysis (ORA) was conducted using the enrichGO function fro
 
 ### Results
 
+#### Cell Clustering Reveals Distinct Populations
+Quality control filtering was performed by assessing feature counts and mitochondrial gene expression. Comparable distribution of these metrics was observed across time points, and thresholds were applied accordingly to remove low-quality cells and potential outliers (n=149064; Figure 1).
+<br><br>
+Principal component analysis (PCA) was performed to reduce dimensionality, and the first 15 principal components were selected for downstream clustering based on the elbow plot (Figure 2). UMAP visualization revealed clear separation of cells into distinct clusters, indicating substantial cellular heterogeneity within the dataset (Figure 3). Clustering at a resolution of 0.5 produced well-defined and biologically interpretable groups within excessive fragmentation. UMAPs grouped by timepoints, disease condition and mouse identities showed strong mixing of cells by these variables (Figure 4). This suggests that clustering was driven by biological variation rather than technical artifacts and therefore, no batch effect correction was applied. 
+
 ### Discussion
 
 ## References
