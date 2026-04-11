@@ -34,7 +34,7 @@ Highly variable genes were identified (`FindVariableFeatures`) using the varianc
 #### Dimensionality Reduction and Clustering
 Principal component analysis (PCA) was performed to reduce dimensionality and highlight similarity patterns in the data (`runPCA`). An elbow plot was generated to determine the number of principal components used for downstream analysis, with the first 15 components selected as they captured the majority of variance prior to plateauing (`ElbowPlot`).
 <br><br>
-Graph-based clustering was performed using the Seurat `FindNeighbors` and `FindClusters` functions based on the selected principal components. Multiple clustering resolutions were evaluated, and a resolution of 0.5 was selected as it produced well-separated clusters without the over-fragmentation observed at higher resolutions (e.g., 0.8). Uniform Manifold Approximation and Projection (UMAP) was used to efficiently visualize high-dimensional single-cell data into interpretable clusters.
+Graph-based clustering was performed using the Seurat `FindNeighbors` and `FindClusters` functions based on the selected principal components. Multiple clustering resolutions were evaluated, and a resolution of 0.5 was selected as it produced well-separated clusters without the over-fragmentation observed at higher resolutions (e.g., 0.8). Uniform Manifold Approximation and Projection (UMAP) was used to efficiently visualize high-dimensional single-cell data into interpretable clusters (`RunUMAP`, `DimPlot`).
 
 #### Batch Effect Correction
 Potential batch effects were assessed by visualizing UMAPs coloured by sample metadata, including time points, mouse identities, and disease condition.
@@ -44,8 +44,8 @@ Cell type annotation was performed using a manual, marker-based approach. Cluste
 <br><br>
 Clusters were classified into cell types according to the known cell type(s) of the dominant marker genes through a literature search with consideration of the biological context of nasal mucosa tissue. In cases where clusters exhibited mixed or ambiguous marker profiles, cell type identities were consolidated based on the predominant expression pattern across multiple markers.
 <br><br>
-Feature plots were generated throughout the annotation process to visualize the spatial distribution and specificity of marker gene expression across clusters, enabling validation of candidate cell type assignments. Representative feature plots were generated for both well-defined clusters and clusters with mixed marker signatures, as well as for key marker genes across major cell types.
-Following annotation, cluster identities were relabeled using Seurat’s RenameIdents function, and annotated cell types were visualized using UMAP with cluster labels displayed.
+Feature plots were generated throughout the annotation process to visualize the spatial distribution and specificity of marker gene expression across clusters, enabling validation of candidate cell type assignments (`FeaturePlot`). Representative feature plots were generated for both well-defined clusters and clusters with mixed marker signatures, as well as for key marker genes across major cell types.
+Following annotation, cluster identities were relabeled using Seurat’s `RenameIdents` function, and annotated cell types were visualized using UMAP with cluster labels displayed.
 
 #### Differential Expression Analysis
 The Seurat object was inspected for NA or missing data and samples missing Mouse identifiers (IDs) were removed to ensure independent biological replicates and to exclude potential doublets or ambiguous cell assignments. 
@@ -56,7 +56,7 @@ This pseudobulk approach enabled differential expression testing at the level of
 Volcano plots were generated for the time point comparisons relative to day 2 (peak viral infection), excluding Naïve (URT infection) (n=3), and for each tissue type comparison (n=3). 
 
 #### Functional Enrichment Analysis
-Over-representation analysis (ORA) was conducted using the enrichGO function from clusterProfiler (v.4.16.0) using the `org.Mm.eg.db` Mouse annotation database (v.21.0). Genes were filtered based on an adjusted p-value < 0.05 and an absolute log2 fold-change > 0.25, consistent with commonly used thresholds in single-cell RNA-seq Seurat workflows to capture biologically meaningful expression changes while filtering out technical noise. Gene Ontology (GO) Biological Process (BP) terms were evaluated using gene symbols as identifiers, with Benjamin-Hochberg multiple testing correction applied. A background universe consisting of a unique list of the tested genes was used to control for selection bias and results were visualized using a dot plot (`dotplot`).
+Over-representation analysis (ORA) was conducted using the `enrichGO` function from clusterProfiler (v.4.16.0) using the `org.Mm.eg.db` Mouse annotation database (v.21.0). Genes were filtered based on an adjusted p-value < 0.05 and an absolute log2 fold-change > 0.25, consistent with commonly used thresholds in single-cell RNA-seq Seurat workflows to capture biologically meaningful expression changes while filtering out technical noise. Gene Ontology (GO) Biological Process (BP) terms were evaluated using gene symbols as identifiers, with Benjamin-Hochberg multiple testing correction applied. A background universe consisting of a unique list of the tested genes was used to control for selection bias and results were visualized using a dot plot (`dotplot`).
 
 ### Results
 
