@@ -32,7 +32,7 @@ Gene expression data were normalized using the log-normalization method implemen
 Highly variable genes were identified (`FindVariableFeatures`) using the variance-stabilizing transformation (vst) method, where the top 2000 features were selected to capture genes that drive cell variability and reduce noise. The data were then scaled (`ScaleData`) to equalize gene expression values for downstream analyses.
 
 #### Dimensionality Reduction and Clustering
-Principal component analysis (PCA) was performed to reduce dimensionality and highlight similarity patterns in the data. An elbow plot was generated to determine the number of principal components used for downstream analysis, with the first 15 components selected as they captured the majority of variance prior to plateauing.
+Principal component analysis (PCA) was performed to reduce dimensionality and highlight similarity patterns in the data (`runPCA`). An elbow plot was generated to determine the number of principal components used for downstream analysis, with the first 15 components selected as they captured the majority of variance prior to plateauing (`ElbowPlot`).
 <br><br>
 Graph-based clustering was performed using the Seurat `FindNeighbors` and `FindClusters` functions based on the selected principal components. Multiple clustering resolutions were evaluated, and a resolution of 0.5 was selected as it produced well-separated clusters without the over-fragmentation observed at higher resolutions (e.g., 0.8). Uniform Manifold Approximation and Projection (UMAP) was used to efficiently visualize high-dimensional single-cell data into interpretable clusters.
 
