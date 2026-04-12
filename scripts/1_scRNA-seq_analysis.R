@@ -20,9 +20,6 @@ VlnPlot(seurat_obj, features = "percent.mt", raster = FALSE, pt.size = 0)
 
 seurat_obj <- subset(seurat_obj, subset = nFeature_RNA > 500 & percent.mt < 10)
 
-# Set system memory to 32GB
-Sys.setenv(R_MAX_VSIZE = "32Gb")
-
 ## Normalize ----
 seurat_obj <- NormalizeData(seurat_obj)
 # seurat_obj <- SCTransform(seurat_obj, vars.to.regress = "percent.mt", method = "glmGamPoi") # too computationally expensive
@@ -93,40 +90,40 @@ levels(seurat_obj)
 
 # Identify cluster labels
 new_labels <- c(
-  "Olfactory receptors",    # 0
-  "Olfactory receptors",    # 1
+  "Olfactory Receptors",    # 0
+  "Olfactory Receptors",    # 1
   "Macrophages",            # 2
-  "Basal epithelial",       # 3
-  "B lymphocytes",          # 4
+  "Basal Epithelial",       # 3
+  "B Lymphocytes",          # 4
   "Neurons",                # 5
   "Macrophages",            # 6
   "Endothelial",            # 7
   "T/NK",                   # 8
-  "Neutrophils/myeloid",    # 9
+  "Neutrophils/Myeloid",    # 9
   "Epithelial",             # 10
-  "Olfactory neurons",      # 11
+  "Olfactory Neurons",      # 11
   "Fibroblasts",            # 12
-  "Ciliated epithelium",    # 13
+  "Ciliated Epithelium",    # 13
   "Dendritic",              # 14
-  "Secretory epithelial",   # 15
-  "Secretory epithelial",   # 16
+  "Secretory Epithelial",   # 15
+  "Secretory Epithelial",   # 16
   "Neutrophils",            # 17
-  "Progenitor epithelial",  # 18
-  "Smooth muscle/pericytes",# 19
+  "Progenitor Epithelial",  # 18
+  "Smooth Muscle/Pericytes",# 19
   "Osteoblasts",            # 20
-  "Secretory epithelial",   # 21
+  "Secretory Epithelial",   # 21
   "Neutrophils",            # 22
-  "Secretory epithelial",   # 23
-  "Secretory epithelial",   # 24
+  "Secretory Epithelial",   # 23
+  "Secretory Epithelial",   # 24
   "Tuft",                   # 25
   "Glial",                  # 26
-  "Proliferating cells",    # 27
-  "Proliferating cells",    # 28
-  "Proliferating cells",    # 29
-  "Proliferating cells",    # 30
-  "Proliferating cells",    # 31
+  "Proliferating Cells",    # 27
+  "Proliferating Cells",    # 28
+  "Proliferating Cells",    # 29
+  "Proliferating Cells",    # 30
+  "Proliferating Cells",    # 31
   "Cancer",                 # 32
-  "Secretory epithelial"    # 33
+  "Secretory Epithelial"    # 33
 )
 
 # Assign cluster names
