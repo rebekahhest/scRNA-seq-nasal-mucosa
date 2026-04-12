@@ -94,3 +94,52 @@ Despite these strengths, several limitations should be considered. Cell type ann
 Overall, this study demonstrates that macrophage responses to viral infection are both temporally dynamic and spatially specialized, reflecting the complexity of host immune defense. These findings highlight the value of single-cell RNA-sequencing (scRNA-seq) in resolving cellular heterogeneity and advancing our understanding host cellular responses, including the identification of novel cell states, viral target cells, and key antiviral mechanisms (Zhang et al., 2026). 
 
 ## References
+Ball, S. L., Mann, D. A., Wilson, J. A., & Fisher, A. J. (2016). The Role of the Fibroblast in Inflammatory Upper Airway Conditions. The American Journal of Pathology, 186(2), 225–233. https://doi.org/10.1016/j.ajpath.2015.09.020
+Bustamante-Marin, X. M., & Ostrowski, L. E. (2017). Cilia and Mucociliary Clearance. _Cold Spring Harbor Perspectives in Biology_, _9_(4), a028241. https://doi.org/10.1101/cshperspect.a028241
+<br><br>
+Chang, J. T., Liu, L. B., Wang, P. G., & An, J. (2024). Single-cell RNA sequencing to understand host-virus interactions. Virologica Sinica, 39(1), 1–8. https://doi.org/10.1016/j.virs.2023.11.009
+Chen G., Ning B., & Shi T. (2019). Single-Cell RNA-Seq Technologies and Related Computational Data Analysis. _Frontiers in Genetics_, _10_, 317. https://doi.org/10.3389/fgene.2019.00317
+<br><br>
+Cybulski, T., Sala, M. A., Nicholson, T., Klug, Z., Nelson, R., Yu, Z., Sokolenko, Y., Diaz, E., Swaminathan, S., Lu, Z., Markov, N. S., McKone, E. F., Misharin, A. V., & Jain, M. (2026). Single-cell RNAseq identifies persistent epithelial and immune dysfunction in PwCF by mitigating inter-individual sampling heterogeneity. _Journal of Cystic Fibrosis_. https://doi.org/10.1016/j.jcf.2026.01.009
+<br><br>
+Denney L., & Ho L. P. (2018). The role of respiratory epithelium in host defence against influenza virus infection. Biomedical Journal, 41(4):218-233. https://doi.org/10.1016/j.bj.2018.08.004
+Finak, G., McDavid, A., Yajima, M., Deng, J., Gersuk, V., Shalek, A. K., Slichter, C. K., Miller, H. W., McElrath, M. J., Prlic, M., Linsley, P. S., & Gottardo, R. (2015). MAST: a flexible statistical framework for assessing transcriptional changes and characterizing heterogeneity in single-cell RNA sequencing data. _Genome Biology_, _16_, 278. https://doi.org/10.1186/s13059-015-0844-5
+<br><br>
+Gowanlock S. N., Lam V. H., Tepe Z. G., Park D. E., Tai V., Salazar J. E., Pham T., Khan Y., Nelson S., Horn C., Zuanazzi D., Yang D., Price L. B., Kaul R., Sowerby L., Troyer R. M., Liu C. M., & Prodger J. L. (2026). The adult nasal mucosa is defined by distinct immune profiles that modulate in-vitro SARS-CoV-2 infection. Res Sq [Preprint]. rs.3.rs-8397474. https://doi.org/10.21203/rs.3.rs-8397474/v1
+<br><br>
+Hafemeister C., & Satija R. (2019). Normalization and variance stabilization of single-cell RNA-seq data using regularized negative binomial regression. _Genome Biology_, _20_(1), 296. https://doi.org/10.1186/s13059-019-1874-1
+<br><br>
+Harris R. A. (2014). Spatial, Temporal, and Functional Aspects of Macrophages during "The Good, the Bad, and the Ugly" Phases of Inflammation. _Frontiers in Immunology_, _5_, 612. https://doi.org/10.3389/fimmu.2014.00612
+<br><br>
+Hoagland D. A., Rodríguez-Morales P., Mann A. O., Baez Vazquez A. Y., Yu S., Lai A., Kane H., Dang S. M., Lin Y., Thorens L., Begum S., Castro M. A., Pope S. D., Lim J., Li S., Zhang X., Li M. O., Kim C. F., Jackson R., Medzhitov R., & Franklin R. A. (2025). Macrophage-derived oncostatin M repairs the lung epithelial barrier during inflammatory damage. _Science_, _389_(6756), 169-175. https://doi.org/10.1126/science.adi8828
+<br><br>
+Jenkins, S. J., & Allen, J. E. (2021). The expanding world of tissue-resident macrophages. _European Journal of Immunology_, _51_(8), 1882–1896. https://doi.org/10.1002/eji.202048881
+<br><br>
+Jovic D., Liang X., Zeng H., Lin L., Xu F., & Luo Y. (2022). Single-cell RNA sequencing technologies and applications: A brief overview. _Clinical and Translational Medicine_, _12_(3), e694 https://doi.org/10.1002/ctm2.694
+<br><br>
+Kalantari-Dehaghi M., Ghohabi-Esfahani N., & Emadi-Baygi M. (2025). From bulk RNA sequencing to spatial transcriptomics: a comparative review of differential gene expression analysis methods. _Human Genomics_, _20_(1), 9. https://doi.org/10.1186/s40246-025-00884-w
+<br><br>
+Kazer S. W., Match C. M., Langan E. M., Messou M.A., LaSalle T. J., O'Leary E., Marbourg J., Naughton K., von Andrian U. H., & Ordovas-Montanes J. (2024). Primary nasal influenza infection rewires tissue-scale memory response dynamics. _Immunity_, _57_(8), 1955-1974.e8. https://doi.org/10.1016/j.immuni.2024.06.005
+<br><br>
+Kharchenko, P.V. (2021). The triumphs and limitations of computational methods for scRNA-seq. Nature Methods, 18, 723–732. https://doi.org/10.1038/s41592-021-01171-x
+Mass E., Nimmerjahn F., Kierdorf K., & Schlitzer A. (2023). Tissue-specific macrophages: how they develop and choreograph tissue biology. _Nature Reviews Immunology_, _23_(9), 563-579. 10.1038/s41577-023-00848-y
+<br><br>
+Mao Z. H., Gao Z. X., Liu Y., Liu D. W., Liu Z. S., & Wu P. (2023). Single-cell transcriptomics: A new tool for studying diabetic kidney disease. Frontiers in Physiology, 13,1053850, https://doi.org/10.3389/fphys.2022.1053850
+Pace, E., Di Vincenzo, S., Ferraro, M., Lanata, L., & Scaglione, F. (2024). Role of airway epithelium in viral respiratory infections: Can carbocysteine prevent or mitigate them? _Immunology_, _172_(3), 329–342. https://doi.org/10.1111/imm.13762
+<br><br>
+Scherzad A., Hagen R., & Hackenberg S. (2019). Current Understanding of Nasal Epithelial Cell Mis-Differentiation. Journal of Inflammation Research, 12, 309-317. https://doi.org/10.2147/JIR.S180853.
+Stuart, T., Butler, A., Hoffman, P., Hafemeister, C., Papalexi, E., Mauck, W. M., 3rd, Hao, Y., Stoeckius, M., Smibert, P., & Satija, R. (2019). Comprehensive Integration of Single-Cell Data. _Cell_, _177_(7), 1888–1902.e21. https://doi.org/10.1016/j.cell.2019.05.031
+<br><br>
+Tzec-Interián J. A., González-Padilla D., & Góngora-Castillo E. B. (2025). Bioinformatics perspectives on transcriptomics: A comprehensive review of bulk and single-cell RNA sequencing analyses. _Quantitative Biology_, _13_(2), e78. https://doi.org/10.1002/qub2.78
+<br><br>
+Walker L. J., Sewell A. K., & Klenerman P. (2010). T cell sensitivity and the outcome of viral infection. Clinical and Experimental _Immunology_, _159_(3):245-55. https://doi.org/10.1111/j.1365-2249.2009.04047.x
+<br><br>
+Wellford, S. A., Chen, C. W., Vukovic, M., Batich, K. A., Lin, E., Shalek, A. K., Ordovas-Montanes, J., Moseman, A. P., & Moseman, E. A. (2024). Distinct olfactory mucosal macrophage populations mediate neuronal maintenance and pathogen defense. _Mucosal Immunology_, _17_(5), 1102–1113. https://doi.org/10.1016/j.mucimm.2024.07.009
+<br><br>
+Yu J., Shang C., Deng X., Jia J., Shang X., Wang Z,, Zheng Y., Zhang R., Wang Y., Zhang H., Liu H., Liu W. J., Li H., & Cao B. (2024. Time-resolved scRNA-seq reveals transcription dynamics of polarized macrophages with influenza A virus infection and antigen presentation to T cells. _Emerging Microbes and Infections_, _13_(1), 2387450. https://doi.org/10.1080/22221751.2024.2387450
+<br><br>
+Zhang S., Li X., Lin J., Lin Q., & Wong K. C. (2023). Review of single-cell RNA-seq data clustering for cell-type identification and characterization, _RNA_, _29_(5), 517-530. https://doi.org/10.1261/rna.078965
+<br><br>
+Zhang H., Li Y., Li H., Liu S., Wang D., Chen H., Liu Q., & Wang X. (2026). Single-cell RNA sequencing offers novel perspectives in viral infection research. _Frontiers in Cellular and Infection Microbiology_, _16_, 1798303. https://doi.org/10.3389/fcimb.2026.1798303
+<br>
+Zhou, X., Wu, Y., Zhu, Z., Lu, C., Zhang, C., Zeng, L., Xie, F., Zhang, L., & Zhou, F. (2025). Mucosal immune response in biology, disease prevention and treatment. _Signal Transduction and Targeted Therapy_, _10_(1), 7. https://doi.org/10.1038/s41392-024-02043-4
