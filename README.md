@@ -86,7 +86,7 @@ Clustering at a resolution of 0.5 produced well-defined and biologically interpr
 Clusters were annotated based on the top five expressed genes by average log2 fold change. Feature plots demonstrated that several clusters exhibited consistent and cell type-specific expression patterns (Figure 5). 
 
 ![Figure 5](figures/05_UMAP_Annotated.png)<br>
-**Figure 4. Uniform Manifold Approximation and Projection (UMAP) embedding of all cells colored by unsupervised cluster identity. A total of 34 transcriptionally distinct clusters (0–33) were identified based on shared gene expression profiles. Clusters represent heterogeneous cell populations.**
+**Figure 5. Uniform Manifold Approximation and Projection (UMAP) embedding of all cells colored by unsupervised cluster identity. A total of 34 transcriptionally distinct clusters (0–33) were identified based on shared gene expression profiles. Clusters represent heterogeneous cell populations.**
 
 For example, cluster 4 showed strong and localized expression of B cell markers including _Iglc2_, _Fcmr_, _Iglc1_, _Ighd_, and _Ms4a1_ supporting its annotation as B lymphocytes (Figure 6). 
 
@@ -100,7 +100,7 @@ In contrast, some clusters displayed more heterogenous expression. Cluster 33 co
 
 Feature plots of marker genes across multiple clusters further confirmed the separation of cell type populations, including basal epithelium (_Krt15_), macrophages (_Ms4a7_), neutrophils (_Ly6g_), B cells (_Ms4a1_), and endothelial (_Ptprb_) (Figure 8). 
 
-![Figure 8](figures/08_Clusters_Mixed.png)<br>
+![Figure 8](figures/08_Clusters.png)<br>
 **Figure 8. Feature plots displaying representative markers for key cell types, including epithelial (Krt15), macrophages (Ms4a7), neutrophils (Ly6g), B cells (Ms4a1), and endothelial cells (Ptprb). Distinct expression patterns validate cell type annotations.**
 
 Given the focus on immune response to viral infection, macrophages were selected for downstream analysis. Genes associated with macrophages in cluster 2, including _Cd209f_, _Cd5l_, and _Ms4a7_ showed clustering, confirming the cell type of this population (Figure 9). 
