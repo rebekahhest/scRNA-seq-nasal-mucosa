@@ -1,0 +1,171 @@
+,p_val,avg_log2FC,pct.1,pct.2,p_val_adj,cluster,gene,gene cell type(s),cluster label
+1,2.01118708589854e-189,4.711940849,0.013,0.001,5.05391202815445e-185,0,Olfr1042,olfactory receptor,olfactory receptor
+2,3.71292230267369e-94,4.508234207,0.013,0.003,9.33020245438873e-90,0,Olfr77,olfactory receptor,olfactory receptor
+3,1.23851576649819e-87,4.351240371,0.012,0.003,3.1122662696333e-83,0,Olfr1406,olfactory receptor,olfactory receptor
+4,1.92409787631139e-145,4.296562752,0.013,0.002,4.8350655533829e-141,0,Olfr411,olfactory receptor,olfactory receptor
+5,0,4.065046122,0.035,0.005,0,0,Avp,magnocellular eurons,olfactory receptor
+6,2.14034729341388e-111,4.462218325,0.01,0.001,5.37847871361975e-107,1,Olfr169,olfactory receptor,olfactory receptor
+7,3.04015183306728e-119,4.423200367,0.012,0.002,7.63959754131477e-115,1,Olfr1247,olfactory receptor,olfactory receptor
+8,1.91027388128386e-65,4.410529283,0.011,0.003,4.80032723627821e-61,1,Olfr1228,olfactory receptor,olfactory receptor
+9,2.79683956373415e-229,4.208221126,0.016,0.001,7.02817813970753e-225,1,Olfr55,olfactory receptor,olfactory receptor
+10,3.77170770338216e-190,4.153294272,0.021,0.004,9.47792428782902e-186,1,Olfr1226,olfactory receptor,olfactory receptor
+11,0,8.66945663,0.499,0.004,0,2,Fcrls,microglial,macrophages
+12,0,8.669287428,0.036,0,0,2,Cd209f,macrophages,macrophages
+13,1.98166662987817e-259,7.144109343,0.01,0,4.97973007422086e-255,2,Cd5l,macrophages,macrophages
+14,0,7.130193909,0.495,0.007,0,2,Pf4,cytokine,macrophages
+15,0,6.990649954,0.917,0.017,0,2,Ms4a7,myeloid/macrophages/dendritic,macrophages
+16,0,5.6177675,0.817,0.028,0,3,Krt15,keratinocytes,basal epithelial
+17,0,5.484890131,0.191,0.007,0,3,Lgals7,squamous epithelial,basal epithelial
+18,2.11670797710329e-286,5.253821596,0.019,0.001,5.31907547566285e-282,3,Sprr2a3,epithelial,basal epithelial
+19,0,5.178004305,0.924,0.071,0,3,Sfn,epithelial,basal epithelial
+20,0,5.156600206,0.887,0.045,0,3,Adh7,keratinocytes,basal epithelial
+21,0,8.863941757,0.66,0.005,0,4,Iglc2,B lymphocytes,B lymphocytes
+22,0,8.622483568,0.53,0.004,0,4,Fcmr,B lymphocytes,B lymphocytes
+23,0,8.546718177,0.35,0.004,0,4,Iglc1,B lymphocytes,B lymphocytes
+24,0,8.427362242,0.563,0.005,0,4,Ighd,B lymphocytes,B lymphocytes
+25,0,7.818637821,0.668,0.005,0,4,Ms4a1,B lymphocytes,B lymphocytes
+26,0,8.176328824,0.015,0,0,5,Gucy2d,retinal photoreceptor,neuronal support
+27,0,8.08066235,0.051,0.001,0,5,Pvalb,basket/chandelier,neuronal support
+28,0,7.89616657,0.207,0.002,0,5,Grp,neuronal support,neuronal support
+29,0,7.581406011,0.761,0.012,0,5,Gng8,neuronal support,neuronal support
+30,0,6.752094652,0.488,0.011,0,5,Stk32a,hair,neuronal support
+31,0,9.414276079,0.024,0,0,6,Gm15056,macrophages/immune cell,macrophages
+32,0,6.977463656,0.29,0.004,0,6,Ly6i,macrophages,macrophages
+33,0,6.114831595,0.454,0.012,0,6,Apoc2,macrophages,macrophages
+34,0,5.958358834,0.365,0.009,0,6,Ifi205,macrophages,macrophages
+35,0,5.504039536,0.241,0.01,0,6,Ear2,immune cell,macrophages
+36,0,11.50767686,0.392,0,0,7,Gpihbp1,endothelial,endothelial
+37,0,10.38618046,0.89,0.003,0,7,Ptprb,endothelial,endothelial
+38,0,10.33007855,0.284,0.001,0,7,Rbp7,endothelial,endothelial
+39,0,10.18204024,0.775,0.003,0,7,Emcn,endothelial,endothelial
+40,0,9.818825164,0.044,0.001,0,7,Ccl21a,stromal/fibroblastic reticular,endothelial
+41,0,9.659711921,0.141,0,0,8,Klra9,Natural Killer (NK),T/NK
+42,0,9.415405725,0.125,0,0,8,Trdc,T cells,T/NK
+43,0,9.173068839,0.31,0.001,0,8,Prf1,Natural Killer (NK)/T cells,T/NK
+44,0,9.136743153,0.112,0,0,8,Klra4,Natural Killer (NK)/T cells,T/NK
+45,0,8.952288474,0.021,0,0,8,Il17a,T cells,T/NK
+46,0,7.570692478,0.04,0.001,0,9,Cyp11a1,adrenal,neutrophils/myeloid
+47,0,6.50729703,0.753,0.016,0,9,Cxcr2,neutrophils/myeloid,neutrophils/myeloid
+48,0,6.304299101,0.646,0.024,0,9,Il1r2,neutrophils/myeloid,neutrophils/myeloid
+49,0,6.253683809,0.336,0.015,0,9,Acod1,myeloid,neutrophils/myeloid
+50,0,6.190728404,0.03,0,0,9,Fcer1a,mast/myeloid,neutrophils/myeloid
+51,0,7.648644658,0.814,0.013,0,10,Nrcam,neurons/glial,epithelial
+52,0,5.545144638,0.915,0.027,0,10,Igfbp2,neurons/glial,epithelial
+53,0,4.8148723,0.804,0.026,0,10,Srd5a2,luminal epithelial,epithelial
+54,0,4.680357712,0.156,0.007,0,10,Ccl20,epithelial,epithelial
+55,0,4.584892337,0.95,0.064,0,10,Krt17,basal epithelial,epithelial
+56,1.90314335789986e-45,5.176152603,0.013,0.002,4.78240894406657e-41,11,Gucy1b2,B cells,olfactory sensory neurons (OSNs)
+57,6.70285678108061e-70,3.390806776,0.014,0.002,1.68436088051775e-65,11,Gm48860,corticothalamic (CT) neurons,olfactory sensory neurons (OSNs)
+58,7.05967956513407e-123,3.383260152,0.024,0.003,1.77402687792254e-118,11,Gm13762,B-lymphocyte,olfactory sensory neurons (OSNs)
+59,2.9410538834032e-89,3.36230322,0.01,0.001,7.39057430360389e-85,11,Olfr1442,olfactory receptor,olfactory sensory neurons (OSNs)
+60,6.7800875115596e-86,3.295195575,0.019,0.002,1.70376819077981e-81,11,Olfr731,olfactory sensory neurons (OSNs),olfactory sensory neurons (OSNs)
+61,0,9.578732401,0.033,0,0,12,Mstn,fibroblasts,fibroblasts
+62,0,9.453584031,0.356,0.001,0,12,Dpt,fibroblasts,fibroblasts
+63,0,9.240444616,0.085,0,0,12,Mmp3,fibroblasts,fibroblasts
+64,0,9.173861294,0.915,0.022,0,12,Apod,fibroblasts,fibroblasts
+65,0,9.106649497,0.176,0.001,0,12,Clec3b,fibroblasts,fibroblasts
+66,0,9.410183538,0.214,0.001,0,13,Sntn,ciliated cells,ciliated epithelial
+67,0,9.390411064,0.231,0.001,0,13,Tmem212,epithelial/neural,ciliated epithelial
+68,0,8.785246474,0.284,0.004,0,13,AU040972,ciliated epithelial,ciliated epithelial
+69,0,8.346825107,0.242,0.001,0,13,Gp2,pancreatic progenitors,ciliated epithelial
+70,0,7.883202972,0.058,0.001,0,13,Muc5ac,epithelial/secretory,ciliated epithelial
+71,0,7.811500471,0.143,0.001,0,14,Ccl22,dendritic/macrophages,dendritic
+72,0,7.665754932,0.172,0.004,0,14,Ccr9,T/dendritic,dendritic
+73,0,7.648239129,0.218,0.002,0,14,Ccl17,dendritic/macrophages,dendritic
+74,0,6.901838925,0.14,0.003,0,14,Cox6a2,striated,dendritic
+75,0,6.668167171,0.024,0.001,0,14,Apol7c,conventional dendritic,dendritic
+76,0,8.280082954,0.171,0.003,0,15,Dmbt1,epithelial/macrophages,secretory epithelial
+77,0,6.835821107,0.068,0.006,0,15,Klk1,glandular epithelial/secretory,secretory epithelial
+78,0,6.768033668,0.035,0.001,0,15,Klk1b11,macrophages,secretory epithelial
+79,5.18562751573848e-36,6.703847145,0.017,0.003,1.30309633842992e-31,15,2310057J18Rik,scretory,secretory epithelial
+80,0,6.196708604,0.093,0.002,0,15,Dnase1,enterocytes,secretory epithelial
+81,0,11.5490428,0.019,0,0,16,Gpx5,epidymal principal,secretory epithelial
+82,0,10.94810535,0.135,0.001,0,16,Ces1a,hepatocytes/macrophages,secretory epithelial
+83,0,10.89233695,0.18,0.004,0,16,Bpifb6,secretory epithelial,secretory epithelial
+84,0,10.70476255,0.488,0.002,0,16,5430419D17Rik,pancreatic islets/olfactory epithelium,secretory epithelial
+85,0,10.64893203,0.377,0.007,0,16,Gpx6,olfactory epithelium,secretory epithelial
+86,0,8.824860946,0.778,0.004,0,17,Ly6g,neutrophils,neutrophil
+87,0,8.34570867,0.83,0.014,0,17,Mmp8,macrophages/fibroblasts/endotheilial/chondrocytes,neutrophil
+88,0,7.921054774,0.053,0.001,0,17,Stfa3,epithelial,neutrophil
+89,0,7.652136088,0.925,0.021,0,17,Retnlg,myeloid,neutrophil
+90,0,7.188592896,0.995,0.018,0,17,Wfdc21,monocyte-derived dendritic/macrophages/myeloid,neutrophil
+91,0,10.25451661,0.959,0.004,0,18,Smbd1,scarpie mouse brain,progenitor epithelial
+92,0,10.19459738,0.961,0.005,0,18,Ascl3,adult progenitor,progenitor epithelial
+93,0,9.967526079,0.936,0.004,0,18,Galnt13,neuronal support,progenitor epithelial
+94,0,9.441445425,0.959,0.045,0,18,Coch,cochlin/fibroblasts,progenitor epithelial
+95,0,9.32289825,0.902,0.005,0,18,Moxd1,neuronal support,progenitor epithelial
+96,0,11.23707701,0.476,0.001,0,19,Higd1b,paricytes,smooth muscle/pericytes
+97,0,10.50174648,0.416,0.001,0,19,Pln,cardiomyocytes,smooth muscle/pericytes
+98,0,10.26913472,0.802,0.004,0,19,Myh11,smooth muscle,smooth muscle/pericytes
+99,0,8.675667403,0.756,0.011,0,19,Mustn1,vascular smooth muscle/pericytes,smooth muscle/pericytes
+100,0,8.55809328,0.671,0.005,0,19,Ndufa4l2,vascular smooth muscle/pericytes,smooth muscle/pericytes
+101,0,12.92774494,0.553,0.006,0,20,Bglap,osteoblasts,osteoblasts/chondrocytes
+102,0,12.72304918,0.547,0.003,0,20,Bglap2,osteoblasts,osteoblasts/chondrocytes
+103,0,12.40671077,0.497,0.002,0,20,Ibsp,osteoblasts,osteoblasts/chondrocytes
+104,0,11.8280911,0.224,0,0,20,Snorc,chondrocytes,osteoblasts/chondrocytes
+105,0,11.15351649,0.193,0,0,20,Ucma,chondrocytes,osteoblasts/chondrocytes
+106,0,9.366969103,0.919,0.008,0,21,Muc2,goblet,endothelial
+107,0,8.261346025,0.97,0.043,0,21,Sec14l3,epithelial/endothelial,endothelial
+108,0,8.240669095,0.824,0.005,0,21,Gldn,oligodendrocytes,endothelial
+109,0,7.10577177,0.98,0.036,0,21,Cyp2g1,oflactory sustentacular,endothelial
+110,0,7.002579948,0.907,0.021,0,21,AU021092,endothelial,endothelial
+111,0,10.38637964,0.307,0.001,0,22,Mpo,neutrophils,neutrophils
+112,0,10.21092212,0.367,0.001,0,22,Ctsg,neutrophils,neutrophils
+113,0,10.11372996,0.388,0.001,0,22,Elane,neutrophils,neutrophils
+114,0,9.270918976,0.512,0.013,0,22,Prtn3,neutrophils,neutrophils
+115,0,9.230015148,0.387,0.002,0,22,Ms4a3,neutrophils,neutrophils
+116,0,11.36645656,0.997,0.003,0,23,Bpifb9a,Vomeronasal Organ,secretory epitheilial
+117,0,11.24421443,0.981,0.002,0,23,Bpifb5,respiratory epithelium,secretory epitheilial
+118,0,11.22845425,0.997,0.005,0,23,Bpifb9b,nasal?,secretory epitheilial
+119,0,11.15288239,0.902,0.001,0,23,Odam,ameloblasts,secretory epitheilial
+120,0,11.01551951,0.997,0.003,0,23,2310003L06Rik,keratinocytes,secretory epitheilial
+121,0,10.81733055,0.938,0.005,0,24,Car6,Car6+,secretory epitheilial
+122,0,10.48763649,0.982,0.008,0,24,Scgb2b27,serous acinar,secretory epitheilial
+123,0,10.34963218,0.897,0.006,0,24,Scgb1b27,serous acinar,secretory epitheilial
+124,0,10.27788284,0.388,0.001,0,24,Csn3,epithelial,secretory epitheilial
+125,0,9.373404071,0.809,0.006,0,24,Fbp1,enterocytes,secretory epitheilial
+126,0,10.44228354,0.66,0.002,0,25,Il25,epithelial,Tuft
+127,0,9.999432383,0.428,0.001,0,25,Gnat3,taste receptor,Tuft
+128,0,9.559023744,0.018,0,0,25,Rgs21,taste receptor/airway epithelial,Tuft
+129,0,9.483642254,0.897,0.003,0,25,Rgs13,immune cell,Tuft
+130,0,7.904807343,0.951,0.027,0,25,Adgrg6,endothelial,Tuft
+131,0,11.09073202,0.676,0.006,0,26,Mpz,schwann,glial
+132,0,10.74349296,0.164,0,0,26,Npy,neocortical interneurons,glial
+133,0,9.8627231,0.605,0.012,0,26,Fabp7,astrocytes,glial
+134,0,9.505667534,0.861,0.012,0,26,Plp1,oligodendrocytes,glial
+135,0,9.208205406,0.467,0.003,0,26,Scn7a,glial,glial
+136,0,7.380629506,0.17,0.001,0,27,Jchain,plasma,proliferating
+137,0,6.402571691,0.687,0.017,0,27,Myl4,erythroid,proliferating
+138,0,6.236494658,0.905,0.029,0,27,Pclaf,proliferating/cancer/stem,proliferating
+139,0,6.216333148,0.077,0.001,0,27,Myl10,epididymal,proliferating
+140,0,6.214668512,0.289,0.002,0,27,Igll1,pre-B,proliferating
+141,0,12.13188991,0.26,0.001,0,28,Car1,colonic epitheilial,proliferating
+142,0,7.064137551,0.665,0.01,0,28,Neurod1,neural,proliferating
+143,0,6.436879525,0.634,0.015,0,28,Scg2,pancreatic endocrine,proliferating
+144,0,6.40719332,0.862,0.031,0,28,Cenpf,proliferating,proliferating
+145,0,6.256607764,0.864,0.025,0,28,Ube2c,stem/germ/cancer,proliferating
+146,5.75566090557334e-299,5.6914741,0.075,0.001,1.44634002896152e-294,29,Ubd,B/T/NK/hepatocytes/tumor,proliferating
+147,0,5.662321831,0.097,0.001,0,29,Calcb,neural,proliferating
+148,0,5.433613018,0.818,0.032,0,29,Cenpf,proliferating,proliferating
+149,0,5.364155939,0.149,0.002,0,29,Sprr2a3,secretory epithelial,proliferating
+150,0,5.259485018,0.844,0.028,0,29,Birc5,proliferating/cancer/stem,proliferating
+151,0,17.28231463,0.095,0,0,30,Nppb,ventricular cardiomyocytes,proliferating
+152,0,16.97318385,0.032,0,0,30,Sprr2d,squamous epithelial,proliferating
+153,0,16.73360938,0.277,0,0,30,Lce3a,epidermal keratinocytes,proliferating
+154,0,16.13976174,0.104,0,0,30,Krt12,coroneal epithilium,proliferating
+155,0,15.6965106,0.381,0,0,30,Crct1,squamous epithelial,proliferating
+156,1.31478180737771e-76,7.514531486,0.011,0,3.30391520375945e-72,31,Gzme,,proliferating
+157,0,6.006388032,0.935,0.036,0,31,Hist1h1b,somatic,proliferating
+158,0,5.750183503,0.244,0.005,0,31,Tnfrsf4,T/neutrophils,proliferating
+159,0,5.680449094,0.985,0.032,0,31,Pclaf,proliferating/cancer/stem,proliferating
+160,0,5.662186405,0.96,0.029,0,31,Birc5,proliferating/cancer,proliferating
+161,0,7.775611246,0.96,0.033,0,32,Meg3,cancer/neuronal/hepatocytes,cancer
+162,0,7.268802916,0.951,0.012,0,32,Sprr1a,squamous epithelial,cancer
+163,0,7.044033626,0.973,0.091,0,32,Ppic,stem/T/cancer,cancer
+164,0,5.218432819,0.973,0.092,0,32,Akap12,endothelial,cancer
+165,0,4.929238873,0.796,0.029,0,32,Wnt5a,stromal/marcrophages/endothelial/cancer,cancer
+166,2.08251844128055e-117,5.968499236,0.867,0.064,5.23316059109389e-113,33,Sult1e1,glandular,glandular/epithelial
+167,7.24029577788885e-232,5.618365844,0.4,0.007,1.81941392602569e-227,33,Tac4,immune/B,glandular/epithelial
+168,8.58376527577575e-192,5.209559974,0.933,0.044,2.15701437614969e-187,33,Hist1h2ap,histone,glandular/epithelial
+169,0,5.111138717,0.733,0.013,0,33,Col9a1,chondorocytes,glandular/epithelial
+170,6.87998412104354e-263,5.075935214,0.8,0.023,1.72887120977703e-258,33,Svopl,epithelial,glandular/epithelial
