@@ -64,72 +64,72 @@ Over-representation analysis (ORA) was conducted using the `enrichGO` function f
 Quality control filtering was performed by assessing feature counts and mitochondrial gene expression. Comparable distribution of these metrics was observed across time points, and thresholds were applied accordingly to remove low-quality cells and potential outliers (n=149064; Figure 1).
 <br><br>
 
-![Figure 1](figures/1_QC_Violin_Plots.png)<br>
+![Figure 1](figures/01_QC_Violin_Plots.png)<br>
 **Figure 1. Violin plots showing distributions of detected genes (nFeature_RNA), total counts (nCount_RNA), and mitochondrial gene percentage (percent.mt) across timepoints (days post infection: D02, D05, D08, D14, and naive to assess data quality and guide filtering thresholds.**
 
 Principal component analysis (PCA) was performed to reduce dimensionality, and the first 15 principal components were selected for downstream clustering based on the elbow plot (Figure 2). 
 
-![Figure 2](figures/2_PCA_Elbow_Plot.png)<br>
+![Figure 2](figures/02_PCA_Elbow_Plot.png)<br>
 **Figure 2. Elbow plot showing the standard deviation explained by each principal component (PC). The point of inflection indicates the number of PCs retained for downstream analyses (nPCs = 15).**
 
 UMAP visualization revealed clear separation of cells into distinct clusters, indicating substantial cellular heterogeneity within the dataset (Figure 3). 
 
-![Figure 3](figures/3_UMAP_Clusters.png)<br>
+![Figure 3](figures/03_UMAP_Clusters.png)<br>
 **Figure 3. UMAP plots colored by (A) disease state (influenza vs. normal), (B) timepoint (D02, D05, D08, D14, naive), and (C) individual mouse ID. Cells are well-mixed across conditions and replicates, indicating negligible batch effects.**
 
 Clustering at a resolution of 0.5 produced well-defined and biologically interpretable groups within excessive fragmentation. UMAPs grouped by timepoints, disease condition and mouse identities showed strong mixing of cells by these variables (Figure 4). This suggests that clustering was driven by biological variation rather than technical artifacts and therefore, no batch effect correction was applied. 
 
-![Figure 4](figures/4_UMAP_Batch_Effects.png)<br>
+![Figure 4](figures/04_UMAP_Batch_Effects.png)<br>
 **Figure 4. Uniform Manifold Approximation and Projection (UMAP) embedding of all cells colored by unsupervised cluster identity. A total of 34 transcriptionally distinct clusters (0–33) were identified based on shared gene expression profiles. Clusters represent heterogeneous cell populations.**
 
 #### Manual Annotation Identifies Major Cell Types
 Clusters were annotated based on the top five expressed genes by average log2 fold change. Feature plots demonstrated that several clusters exhibited consistent and cell type-specific expression patterns (Figure 5). 
 
-![Figure 5](figures/5_UMAP_Annotated.png)<br>
+![Figure 5](figures/05_UMAP_Annotated.png)<br>
 **Figure 4. Uniform Manifold Approximation and Projection (UMAP) embedding of all cells colored by unsupervised cluster identity. A total of 34 transcriptionally distinct clusters (0–33) were identified based on shared gene expression profiles. Clusters represent heterogeneous cell populations.**
 
 For example, cluster 4 showed strong and localized expression of B cell markers including _Iglc2_, _Fcmr_, _Iglc1_, _Ighd_, and _Ms4a1_ supporting its annotation as B lymphocytes (Figure 6). 
 
-![Figure 6](figures/6_UMAP_Cluster4.png)<br>
+![Figure 6](figures/06_Cluster4.png)<br>
 **Figure 6. Feature plots showing expression of canonical B cell markers (Iglc2, Iglc1, Ighd, Ms4a1, Fcmr) in cluster 4. Expression is localized to a distinct cluster, supporting its annotation as B lymphocytes.**
 
 In contrast, some clusters displayed more heterogenous expression. Cluster 33 contained expression of genes associated with multiple cell types, including glandular cells (_Sult1e1_), immune cells (_Tac4_), chondrocytes (_Col9a1_), epithelial (_Svopl_) and possible associations with proliferating cells (_Hist1h2ap_), suggesting a mixed or less well-defined cell type (Figure 7). 
 
-![Figure 7](figures/7_UMAP_Cluster33.png)<br>
+![Figure 7](figures/07_Cluster33.png)<br>
 **Figure 7.Feature plots showing expression of genes including Sult1e1, Tac4, Hist1h2ap, Col9a1, and Svopl in cluster 33. Expression is not localized, suggesting a mixed cell type.**
 
 Feature plots of marker genes across multiple clusters further confirmed the separation of cell type populations, including basal epithelium (_Krt15_), macrophages (_Ms4a7_), neutrophils (_Ly6g_), B cells (_Ms4a1_), and endothelial (_Ptprb_) (Figure 8). 
 
-![Figure 8](figures/8_UMAP_Clusters_Mixed.png)<br>
+![Figure 8](figures/08_Clusters_Mixed.png)<br>
 **Figure 8. Feature plots displaying representative markers for key cell types, including epithelial (Krt15), macrophages (Ms4a7), neutrophils (Ly6g), B cells (Ms4a1), and endothelial cells (Ptprb). Distinct expression patterns validate cell type annotations.**
 
 Given the focus on immune response to viral infection, macrophages were selected for downstream analysis. Genes associated with macrophages in cluster 2, including _Cd209f_, _Cd5l_, and _Ms4a7_ showed clustering, confirming the cell type of this population (Figure 9). 
 
-![Figure 9](figures/9_UMAP_Cluster4.png)<br>
+![Figure 9](figures/09_Cluster2.png)<br>
 **Figure 9. Feature plots showing expression of macrophage amarkers (Fcrls, Cd209f, Cd5l, Pf4, Ms4a7). Expression is localized, supporting its annotation as Macrophages and will be used for downstream analyses.**
 
 #### Temporal Changes and Tissue-Specific Differences in Macrophage Gene Expression
 Differential expression analysis was performed on macrophages to compare gene expression across viral infection time points. Pairwise comparisons revealed substantial differences, with 594 genes differentially expression between 2 and 5 DPI, 667 genes between 2 and 8 DPI, and 267 genes between 2 and 14 DPI (adjustsed p-value < 0.05, |log2 fold-change| > 0.25). Volcano plots demonstrated clear separation of upregulated and downregulated genes across all timepoint comparisons (Figure 10).
 <br><br>
 
-![Figure 10](figures/10_UMAP_Volcano_Plot_Time.png)<br>
+![Figure 10](figures/10_Volcano_Plot_Time.png)<br>
 **Figure 10. Volcano plots showing differential expression between days post infection: D02 vs D05 (A), D02 vs D08 (B), and D02 vs D14 (C). Significantly upregulated (red) and downregulated (blue) genes are highlighted based on adjusted p-value < 0.05 and | log2 fold-change thresholds | > 0.25.**
 
 Differential expression analysis across tissue types also revealed notable transcriptional variation. Comparisons identified 832 genes differentially expressed between OM (and RM, 773 genes between OM and LNG, and 1114 genes between RM and LNG. Likewise, volcano plots show evidence of differential expression in separation of upregulated and downregulated genes across all tissue type comparisons (Figure 11). 
 
-![Figure 11](figures/11_UMAP_Volcano_Plot_Tissue.png)<br>
+![Figure 11](figures/11_Volcano_Plot_Tissue.png)<br>
 **Figure 11. Volcano plots showing differential expression between tissue types olfactory mucosa (OM), respiratory mucosa (RM), and lung (LNG): OM vs RM (A), OM vs LNG (B), and RM vs LNG (C). Significantly upregulated (red) and downregulated (blue) genes are highlighted based on adjusted p-value < 0.05 and | log2 fold-change thresholds | > 0.25.**
 
 #### Functional Enrichment Varies Across Timepoint and Tissue Comparisons
 Across temporal contrasts, the number of significantly enriched Gene Ontology (GO) terms varied widely, with 2 and 5 DPI (n=995) and 2 and 8 DPI (n=617) showing extensive enrichment, while 2 and 14 DPI (n=14) exhibited markedly fewer significant terms. Early timepoint comparisons were strongly enriched in processes relating to viral response and regulation of defence mechanisms (Figure 12A-B), while the late timepoint comparison reflected translation and T cell differentiation processes (Figure 12C).
 <br><br>
 
-![Figure 12](figures/12_UMAP_DotPlot_Time.png)<br>
+![Figure 12](figures/12_Dotplot_Time.png)<br>
 **Figure 12. Dot plots showing enriched Gene Ontology (GO) Biological Processes (BP) for differentially expressed genes across timepoints: D02 vs D05 (A), D02 vs D08 (B), and D02 vs D14 (C). Enriched terms include antiviral responses, innate immune activation, and adaptive immune processes, reflecting dynamic immune responses over time.**
 
 A similar pattern of extensive enrichment was observed across tissue comparisons, with all contrasts yielding a high number of significant GO terms (OM vs RM: n=987; OM vs LNG: n=965; RM vs LNG: n=1231). Enriched pathways across all tissue types were predominately associated with immune cell signalling and movement (Figure13A-C).
 
-![Figure 13](figures/13_UMAP_DotPlot_Tissue.png)<br>
+![Figure 13](figures/13_Dotplot_Tissue.png)<br>
 **Figure 13. Dot plots showing enriched Gene Ontology (GO) Biological Processes (BP) for differentially expressed genes across tissues: OM vs RM (A), OM vs LNG (B), and RM vs LNG (C). Enrichment of pathways such as leukocyte migration, chemotaxis, and immune regulation highlights functional differences between anatomical sites.**
 
 ### Discussion
